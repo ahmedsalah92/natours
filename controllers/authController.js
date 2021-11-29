@@ -126,7 +126,6 @@ exports.isLoggedIn = async (req, res, next) => {
 
       // 5) grant access
       res.locals.user = currentUser;
-      console.log(res.locals.user);
 
       return next();
     }
